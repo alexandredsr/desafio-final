@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Ju Salgados - Cardapio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0@beta2/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Pacotes JavaScript do Bootstrap (Popper.js e jQuery) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0@beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    @font-face {
+        font-family: 'Lobster';
+        src: url(Lobster/Lobster-Regular.ttf) format('truetype');
+    }
+	
+	body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+    }
+
+    .content {
+            flex: 1;
+    }
+
+    footer {
+            color: blue;
+            text-align: center;
+            padding: 20px;
+    }
+		
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <div class="logo">
+                <img class="logo" src="img/logo.png">
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown"
+                style="margin-right: 120px; font-size: 25px; font-family: 'Lobster', sans-serif;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#quemsomos">Quem somos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pedidos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Fazer encomenda</a></li>
+                            <li><a class="dropdown-item" href="cardapio.html">Vizualizar cardapio</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="fritos">
+            <table class="table table-hover" style="font-size: 20px;">
+                <thead style="font-family: 'Barlow', sans-serif;">
+                    <tr>
+                        <th colspan="2" style="text-align: center;">Salgados Fritos <span style="color: #ff3131"> R$
+                                50</span></th>
+                    </tr>
+                </thead>
+                <tbody style="font-family: 'Barlow', sans-serif; text-align: center;">
+                    <tr>
+                        <td>Bolinho de calabresa</td>
+                        <td>Bolinho de queijo</td>
+                    </tr>
+                    <tr>
+                        <td>Coxinha</td>
+                        <td>Crespinho de milho</td>
+                    </tr>
+                    <tr>
+                        <td>Croquete de carne</td>
+                        <td>Enroladinho de presunto e queijo</td>
+                    </tr>
+                    <tr>
+                        <td>Enroladinho de salsicha</td>
+                        <td>Risoles de milho com catupity</td>
+                    </tr>
+                    <tr>
+                        <td>Risoles de brocolis com catupity</td>
+                        <td>Quibe</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+		
+		<div id="assados">
+            <table class="table table-hover" style="font-size: 20px;">
+                <thead style="font-family: 'Barlow', sans-serif;">
+                    <tr>
+                        <th colspan="2" style="text-align: center;">Salgados Assados <span style="color: #ff3131"> R$70</span></th>
+                    </tr>
+                </thead>
+                <tbody style="font-family: 'Barlow', sans-serif; text-align: center;">
+                    <tr>
+                        <td>Empada de carne com catupiry</td>
+                        <td>Empada de palmito</td>
+                    </tr>
+                    <tr>
+                        <td>Empada de frango</td>
+                        <td>Esfiha de carne</td>
+                    </tr>
+                    <tr>
+                        <td>Esfiha de frango</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div id="fritosespeciais">
+            <table class="table table-hover" style="font-size: 20px;">
+                <thead style="font-family: 'Barlow', sans-serif;">
+                    <tr>
+                        <th colspan="2" style="text-align: center;">Salgados Fritos Especiais <span style="color: #ff3131"> R$60</span></th>
+                    </tr>
+                </thead>
+                <tbody style="font-family: 'Barlow', sans-serif; text-align: center;">
+                    <tr>
+                        <td>Cajuzinho de lombo</td>
+                        <td>Bolinho de abóbora com carne seca</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="assadosespeciais">
+            <table class="table table-hover" style="font-size: 20px;">
+                <thead style="font-family: 'Barlow', sans-serif;">
+                    <tr>
+                        <th colspan="2" style="text-align: center;">Salgados Assados Especiais<span style="color: #ff3131"> R$80</span></th>
+                    </tr>
+                </thead>
+                <tbody style="font-family: 'Barlow', sans-serif; text-align: center;">
+                    <tr>
+                        <td>Gravatinha de bacon</td>
+                        <td>Trouxinha de frango com catupiry</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+	<footer>
+		<p>2023 - Desenvolvido por Alexandre Ribeiro</p>
+		<p>Todos os direitos reservados</p>
+	</footer>
+
+</body>
+</html>

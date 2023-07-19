@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Ju Salgados</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!--Link dos icones redes sociais-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Lobster';
+            src: url(Lobster/Lobster-Regular.ttf) format('truetype');
+        }
+		
+		body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        footer {
+            color: blue;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+
+            <div class="logo">
+                <img class="logo" src="img/logo.png">
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown"
+                style="margin-right: 120px; font-size: 25px; font-family: 'Lobster', sans-serif;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quemsomos">Quem somos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pedidos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Fazer encomenda</a></li>
+                            <li><a class="dropdown-item" href="cardapio.html">Vizualizar cardapio</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main id="home" class="bg-warning" style="padding-top: 160px;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card-group flex-wrap" style="font-family: 'Lobster', sans-serif;"> 
+                        <div class="card m-3">
+                            <img src="img/frito.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: 30px;">Fritos</h5>
+                                <div class="text-center">
+                                    <a href="cardapio.html#fritos"><button type="button" class="btn btn-danger">Ver cardápio</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3">
+                            <img src="img/frito.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: 30px;">Fritos especiais</h5>
+                                <div class="text-center">
+                                    <a href="cardapio.html#fritosespeciais"><button type="button" class="btn btn-danger">Ver cardápio</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3">
+                            <img src="img/assado.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: 30px;">Assados</h5>
+                                <div class="text-center">
+                                    <a href="cardapio.html#assados"><button type="button" class="btn btn-danger">Ver cardápio</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3">
+                            <img src="img/assadoespecial.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: 30px;">Assados especiais</h5>
+                                <div class="text-center">
+                                    <a href="cardapio.html#assadosespeciais"><button type="button" class="btn btn-danger">Ver cardápio</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div id="quemsomos">
+        <div class="contato p-5 bg-dark" style="font-family: 'Lobster', sans-serif; color:#ff3131;">
+            <div class="row">
+                <div>
+                    <h1 class="text-center" style="margin-top: 100px">Quem somos</h1>
+                    <p class="text-center" style="font-size: 35px;">Somos apaixonados pelo que fazemos, elaboramos
+                        deciliosos salgadinhos bem sequinhos e crocantes! </br>
+                        Iniciamos noosso trabalho no 2018, acreditamos que os cuidados e o capricho na hora de montar o seu salgado conta
+                        muito, por isso temos muito cuidado com o nosso cliente.
+                    </p>
+                </div>
+            </div>
+        </div>
+		</div>
+    </main>
+
+    <!--CONTATO-->
+    <div id="contato" class="contato p-5 bg-warning" style="font-family: 'Barlow', sans-serif;">
+        <div class="row">
+            <div class="col-6">
+                <div class="wrapper">
+                    <div class="infos">
+                        <h3>Endereço</h3>
+
+						<p><i class="bi bi-geo-alt"></i> Rua José Florival Camillo, 285, 13425-839 </p>
+
+						<h3>Contato</h3>
+
+						<p><a href="#" style="text-decoration: none; color: black;"><i class="bi bi-envelope"></i>   jusalgados1@gmail.com</a></p>
+
+						<p><a href="#" style="text-decoration: none; color: black;"><i class="bi bi-telephone"></i>  (19) 99898-0983</a></p>
+
+						<p><a href="#" style="text-decoration: none; color: black;"><i class="bi bi-telephone"></i>  (19) 97133-5971</a></p>
+							
+						<p><a href="#" style="text-decoration: none; color: black;"><i class="bi bi-instagram"></i>   jusalgados1</a></p>
+							 
+						<p><a href="#" style="text-decoration: none; color: black;"><i class="bi bi-facebook"></i>   Ju Salgados</a></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <h1>FALE CONOSCO</h1>
+                <form id="actionForm">
+                    <input type="hidden" name="hasCaptcha" value="0" />
+                    <input type="hidden" name="caminho" value="ajax/u/contato.json" />
+                    <input type="text" class="form-control" placeholder="* Nome" name="nome"
+                        style="width:100%;margin-bottom:10px" />
+                    <input type="email" class="form-control" placeholder="* E-mail" name="email"
+                        style="width:100%;margin-bottom:10px" />
+                    <input type="text" class="form-control mk-cel" placeholder="Telefone" name="t1"
+                        style="width:100%;margin-bottom:10px" />
+                    <textarea class="form-control" placeholder="* Mensagem" name="msg"
+                        style="width:100%;margin-bottom:30px"></textarea>
+                    <button type="submit" class="button button-blue-dark">ENVIAR</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+	
+	<footer>
+		<p>2023 - Desenvolvido por Alexandre Ribeiro</p>
+		<p>Todos os direitos reservados</p>
+	</footer>
+
+</body>
+
+</html>
